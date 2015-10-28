@@ -36,4 +36,5 @@ else
   comment_vote.delete
 end
 
+1
 
