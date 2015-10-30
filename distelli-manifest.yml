@@ -1,0 +1,38 @@
+sachinr/test:
+
+  #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
+  PkgInclude:
+    - '*'
+    #- lib/simplerubyapp/*.rb
+    #- Gemfile
+    #- config.ru
+    #- SimpleRubyApp.gemspec
+
+  #The Build section is for specifying build and pre-packaging steps: http://distel.li/buildsection
+  Build:
+    - echo "Begin Build"
+    #- bundle install
+    #- bundle exec rake test
+
+  #The PreInstall section occurs before install: distel.li/preinstallsection
+  PreInstall:
+    - echo "Begin PreInstall"
+    #- gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    #- curl -sSL https://get.rvm.io | bash -s stable --ruby
+    #- source ~/.rvm/scripts/rvm
+    #- rvm install ruby-1.9.3
+    #- rvm use 1.9.3
+    #- gem install bundle
+
+  #The PostInstall section occurs after install: http://distel.li/postinstallsection
+  PostInstall:
+    - echo "Begin PostInstall"
+    #- source ~/.rvm/scripts/rvm
+    #- rvm use 1.9.3
+    #- bundle install --binstubs $DISTELLI_APPHOME/bundle/bin --standalone --path $DISTELLI_APPHOME/bundle/lib
+
+  #The Exec section executes and monitors the application: distel.li/execsection
+  Exec:
+    #- source ~/.rvm/scripts/rvm
+    #- rvm use 1.9.3
+    #- ./bundle/bin/thin start -p $PORT -e $STAGE
