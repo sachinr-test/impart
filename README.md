@@ -13,3 +13,4 @@ A really simple app for a closed community (students in a class) to share articl
 It's being used by Acturial Science students to share information with each other -- http://impart.herokuapp.com
 
 Creative Commons - Attribution-NonCommercial-ShareAlike 3.0 Unported
+
