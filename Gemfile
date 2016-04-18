@@ -35,8 +35,3 @@ group :test, :development do
   gem 'unicorn'
 end
 
-group :test do
-  gem 'shoulda-matchers'
-  gem 'database_cleaner'
-  gem 'launchy', "= 2.1.0"
-end
