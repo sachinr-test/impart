@@ -23,10 +23,5 @@ gem 'will_paginate', '~> 3.0.0'
 gem "will_paginate-bootstrap", "~> 0.2.2"
 gem 'newrelic_rpm'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'therubyracer', :platforms => :ruby
-  gem 'uglifier', '>= 1.0.3'
-end
 
 
