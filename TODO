@@ -2,16 +2,16 @@ user_id
 comment_id
 value
 
-WHERE AM I? Need to create comment_vote table
+Need to create comment_vote table
 
-            comment.vote(type, user)
-              case type
-              when up
-                self.upvote(user)
-              when down
-                self.downvote(user)
-              end
-            end
+comment.vote(type, user)
+  case type
+  when up
+    self.upvote(user)
+  when down
+    self.downvote(user)
+  end
+end
 
 comment/12/comment_votes/create
 comment.upvote(current_user)
@@ -36,4 +36,7 @@ else
   comment_vote.delete
 end
 
-
+1
+2
+3
+4
